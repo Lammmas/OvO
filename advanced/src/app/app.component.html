@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <h2>Rock, Paper, Scissors</h2>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6 text-right hidden-xs"><h4>You: {{score[0]}}</h4></div>
+      <div class="col-sm-6 visible-xs"><h4>You: {{score[0]}}</h4></div>
+      <div class="col-sm-6"><h4>Computer: {{score[1]}}</h4></div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6 text-right hidden-xs">
+          <p>I choose...</p><p>{{pc}}&nbsp;</p>
+      </div>
+      <div class="col-sm-6">
+          <p>{{npc}}</p><p><strong>{{result}}&nbsp;</strong></p>
+      </div>
+      <div class="col-sm-6 visible-xs">
+          <p>I choose...</p><p>{{pc}}&nbsp;</p>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 text-center">
+        <a class="pointer hover-img-border" id="rock" (click)="play('Rock')">
+            <img class="img-responsive img-thumbnail img-sm" alt="Rock" src="assets/images/rock.png">
+        </a>
+        <a class="pointer hover-img-border" id="paper" (click)="play('Paper')">
+            <img class="img-responsive img-thumbnail img-sm" alt="Paper" src="assets/images/paper.png">
+        </a>
+        <a class="pointer hover-img-border" id="scissors" (click)="play('Scissors')">
+            <img class="img-responsive img-thumbnail img-sm" alt="Scissors" src="assets/images/scissors.png">
+        </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+.pointer {
+    cursor: pointer;
+}
+.p-sm {
+    padding: 1em;
+}
+
+.hover-img-border {
+    img {
+        border-color: transparent;
+        box-shadow: none;
+    }
+
+    &:hover {
+        text-decoration: none;
+
+        img {
+            border-color: #31708f;
+        }
+    }
+}
+
+.img-sm {
+    max-height: 10em;
+}
